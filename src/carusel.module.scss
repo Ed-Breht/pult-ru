@@ -1,0 +1,124 @@
+
+.WrapSlider{
+  position: relative;
+  &:hover{
+    .Info{
+      background: lightskyblue;
+    }
+    .Img{
+      transform: scale(1.01);
+    }
+  }
+}
+
+.SliderCaption{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;
+
+  .ImageTextSale{
+    font-size: 35px;
+    padding: 0 30px;
+    line-height: 100%;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 0.4s;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;
+  }
+
+  .ImageText{
+    font-size: 35px;
+    padding: 15px 30px;
+    line-height: 100%;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .Info{
+    background-color: #1d9cd8;
+    transition: background-color 0.4s;
+    color: white;
+    padding: 10px 30px;
+
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    .InfoText{
+      font-weight: bold;
+    }
+
+    .InfoTextSale{
+      font-weight: bold;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+
+.ImgWrapper{
+  overflow: hidden;
+  .Img {
+    minHeight: 340px ;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.4s;
+  }
+}
+
+
+.p {
+  margin: 0 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  border-radius: 50%;
+  background: #1d9cd8;
+  &.active{
+    background: black;
+  }
+}
+
+.points {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.Sale{
+  color: #1d9cd8;
+  font-size: 120px;
+  padding: 0 30px;
+  font-weight: bold;
+}
+
+.pointsSale{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding-top: 25px;
+  padding-bottom: 90px;
+}

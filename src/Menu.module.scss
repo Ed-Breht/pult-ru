@@ -1,0 +1,100 @@
+.MenuItem{
+  padding:10px 0;
+  text-transform: uppercase;
+  line-height: 20px;
+  font-family: gilroy-semibold, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+  "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 2px;
+  font-weight: 500;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.Active{
+  a{
+    color: black !important;
+  }
+}
+
+.nav a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+
+  color: dodgerblue;
+  //font-weight: bold;
+
+  transition: color 0.5s;
+  &:hover{
+    color: black
+  }
+}
+
+.Image {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  @media (max-width: 1280px) {
+    display: none;
+  }
+}
+
+.MenuSlider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 1280px) {
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+
+    .MenuItem {
+      padding: 8px 0;
+    }
+
+  }
+  font-size: 20px;
+}
+
+.MenuFooter{
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  flex: 1 1 auto;
+}
+
+.FooterMenuItem{
+  padding-bottom:10px;
+  text-transform: uppercase;
+  line-height: 20px;
+  font-family: gilroy-semibold, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+  "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 2px;
+
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.navFoot a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+  color: black;
+  //font-weight: bold;
+
+  transition: color 0.4s;
+  &:hover{
+    color: #69b3ff
+  }
+}
